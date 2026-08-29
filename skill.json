@@ -1,0 +1,38 @@
+{
+  "name": "genpark-acoustic-latent-neural-speech-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Acoustic latent neural speech synthesizer converting phoneme sequences into high-fidelity expressive audio tokens.",
+  "author": "genpark",
+  "category": "neural-tts",
+  "tags": [
+    "whisperspeech",
+    "tortoise-tts",
+    "acoustic-tokenizer",
+    "neural-speech",
+    "latent-vocoder"
+  ],
+  "inputs": {
+    "input_text": {
+      "type": "string"
+    },
+    "reference_timbre_audio_url": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "acoustic_synthesis_id": {
+      "type": "string"
+    },
+    "acoustic_latent_codes_generated": {
+      "type": "integer"
+    },
+    "mel_spectrogram_vocoder_passed": {
+      "type": "boolean"
+    },
+    "synthesized_wav_audio_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
